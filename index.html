@@ -8,24 +8,15 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Google Fonts for signature -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
   
   <style>
-    /* Custom font sizes */
     .text-32pt { font-size: 32pt; }
     .text-16pt { font-size: 16pt; }
     .text-36pt { font-size: 36pt; }
     .text-18pt { font-size: 18pt; }
-    
-    /* Signature font */
-    .signature-font {
-      font-family: 'Dancing Script', cursive;
-    }
-    
-    /* Print styles for A4 */
+    .signature-font { font-family: 'Dancing Script', cursive; }
     @media print {
       body { background: white; }
       @page { size: A4; margin: 0; }
@@ -35,34 +26,28 @@
 <body class="bg-gray-50">
   
   <div class="min-h-screen py-8 px-4">
-    <!-- A4 Document Container -->
     <div class="max-w-[210mm] mx-auto bg-white shadow-2xl relative overflow-hidden">
       
-      <!-- WATERMARK - Moved DOWN by adjusting positioning -->
+      <!-- Watermark -->
       <div class="absolute inset-0 flex items-center justify-center z-0 pointer-events-none" style="padding-top: 100px;">
         <img 
-          src="./src/assets/f27e35eb84d6e7810aa280143872a57f44f6325d.png"
+          src="src/assets/f27e35eb84d6e7810aa280143872a57f44f6325d.png" 
           alt="Watermark" 
           class="w-[580px] h-[580px] opacity-[0.18] object-contain"
         />
       </div>
 
-      <!-- GRADIENT HEADER -->
+      <!-- Header -->
       <div class="bg-gradient-to-r from-[#3D5A99] to-[#4FC3F7] py-6 relative z-10">
         <div class="text-center">
-          <!-- Logo - 120x120px -->
           <div class="flex justify-center mb-4">
             <img 
-              src="assets/f27e35eb84d6e7810aa280143872a57f44f6325d.png" 
+              src="src/assets/f27e35eb84d6e7810aa280143872a57f44f6325d.png" 
               alt="CargoCore Logo" 
               class="w-[120px] h-[120px] object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
             />
           </div>
-          
-          <!-- Company Name -->
           <h1 class="text-white font-bold mb-1 text-32pt">CargoCore</h1>
-          
-          <!-- Tagline -->
           <p class="text-white/90 text-16pt">Moving What Matters</p>
         </div>
       </div>
@@ -70,16 +55,16 @@
       <!-- Main Content -->
       <div class="relative z-10 p-12">
         
-        <!-- DOCUMENT TITLE -->
+        <!-- Title -->
         <div class="text-center space-y-2 mt-8 mb-6 pb-6 border-b border-gray-200">
           <h2 class="font-bold text-[#3D5A99] text-36pt">SALARY SLIP</h2>
           <p class="text-gray-600 text-18pt">For the month of February 2026</p>
         </div>
 
-        <!-- EMPLOYEE DETAILS -->
+        <!-- Employee Details -->
         <div class="bg-gray-50 rounded-lg shadow-sm p-5 mb-8">
           <div class="space-y-2">
-            <div class="text-lg font-bold text-[#2C3E50] mb-3">Siddarth S</div>
+            <div class="text-lg font-bold text-[#2C3E50] mb-3">Rajesh Kumar Sharma</div>
             <div class="grid grid-cols-2 gap-x-8 gap-y-2">
               <div class="text-sm">
                 <span class="text-gray-600">Employee ID:</span>
@@ -105,10 +90,10 @@
           </div>
         </div>
 
-        <!-- TABLES - Two Columns -->
+        <!-- Tables -->
         <div class="grid grid-cols-2 gap-6 mb-8">
           
-          <!-- EARNINGS TABLE -->
+          <!-- Earnings -->
           <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
             <table class="w-full">
               <thead>
@@ -142,7 +127,7 @@
             </table>
           </div>
 
-          <!-- DEDUCTIONS TABLE - Showing breakdown -->
+          <!-- Deductions -->
           <div class="border border-gray-200 rounded-lg overflow-hidden shadow-sm">
             <table class="w-full">
               <thead>
@@ -173,25 +158,23 @@
           </div>
         </div>
 
-        <!-- NET SALARY -->
+        <!-- Net Salary -->
         <div class="bg-gradient-to-r from-[#3D5A99] to-[#4FC3F7] text-white text-center p-6 rounded-xl shadow-lg mb-8">
           <div class="text-lg font-medium">NET PAYABLE SALARY</div>
           <div class="text-4xl font-bold mt-2">₹53,800</div>
         </div>
 
-        <!-- SIGNATURE SECTION -->
+        <!-- Signature -->
         <div class="grid grid-cols-2 gap-12 mb-8 mt-12">
-          <!-- LEFT - Signature -->
           <div>
             <p class="text-sm text-gray-700 font-medium mb-10">Authorized Signature</p>
             <div class="border-t border-gray-400 w-[200px] pt-3">
-              <p class="text-lg signature-font italic">Pruthvi Prasad S</p>
+              <p class="text-lg signature-font italic">Amit Patel</p>
               <p class="text-xs text-gray-500 mt-1">(Logistics Manager)</p>
               <p class="text-xs text-gray-500 mt-1">Date: 28 Feb 2026</p>
             </div>
           </div>
 
-          <!-- RIGHT - Company Seal -->
           <div class="flex items-center justify-center">
             <div class="relative w-[150px] h-[150px]">
               <svg viewBox="0 0 150 150" class="w-full h-full">
@@ -210,7 +193,7 @@
                   <textPath href="#bottomArc" text-anchor="middle" startOffset="50%">LOGISTICS PVT. LTD.</textPath>
                 </text>
                 <image 
-                  href="assets/f27e35eb84d6e7810aa280143872a57f44f6325d.png" 
+                  href="src/assets/f27e35eb84d6e7810aa280143872a57f44f6325d.png" 
                   x="55" 
                   y="55" 
                   width="40" 
@@ -223,7 +206,7 @@
           </div>
         </div>
 
-        <!-- FOOTER -->
+        <!-- Footer -->
         <div class="pt-6 mt-8 border-t border-gray-200 text-center space-y-1">
           <p class="text-xs text-gray-500">
             This is a system-generated document | CargoCore Logistics Pvt. Ltd.
